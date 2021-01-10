@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -14,10 +15,10 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__list-item">
-          <a href="#">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="main-nav__list-item">
-          <a href="#">Каталог продукции</a>
+          <a href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__list-item">
           <a href="#">Подбор программы</a>
@@ -26,41 +27,41 @@
     </nav>
   </header>
   <main class="main">
-    <h1 class="main-heading">Подбор программы</h1>
-    <p class="top-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <h1 class="form-page__main-heading">Подбор программы</h1>
+    <p class="form-page__top-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form action="https://echo.htmlacademy.ru" class="form">
-      <div class="form-top"><label for="name">Имя:<sup>*</sup><input type="text" name="name" id="name"></label></div>
-      <div class="form-top"><label for="weight">Вес(кг):<sup>*</sup><input type="text" name="weight"
+      <div class="form__item"><label for="name">Имя:<sup>*</sup><input type="text" name="name" id="name"></label></div>
+      <div class="form__item"><label for="weight">Вес(кг):<sup>*</sup><input type="text" name="weight"
             id="weight"></label></div>
-      <div class="form-top"><label for="age">Возраст(лет):<input type="text" name="age" id="age"> </label></div>
-      <div class="form-radio">
-        <div class="form-radio__item"><input type="radio" name="loose-weight" id="loose-weight" checked><label
+      <div class="form__item"><label for="age">Возраст(лет):<input type="text" name="age" id="age"> </label></div>
+      <div class="form__radio">
+        <div class="form__radio-item"><input type="radio" name="loose-weight" id="loose-weight" checked><label
             for="loose-weight">похудение</label></div>
-        <div class="form-radio__item"><input type="radio" name="gain-weight" id="gain-weight"><label
+        <div class="form__radio-item"><input type="radio" name="gain-weight" id="gain-weight"><label
             for="gain-weight">набор массы</label></div>
-        <div class="form-radio__item"><input type="radio" name="advice" id="advice"><label for="advice">не знаю (нужен
+        <div class="form__radio-item"><input type="radio" name="advice" id="advice"><label for="advice">не знаю (нужен
             ваш совет)</label></div>
       </div>
-      <h2 class="form-heading">Контактные данные (владельца кота)</h2>
-      <div class="form-contacts"><label for="e-mail">e-mail:<sup>*</sup><input type="text" name="e-mail" id="e-mail"
+      <h2 class="form__heading">Контактные данные (владельца кота)</h2>
+      <div class="form__item"><label for="e-mail">e-mail:<sup>*</sup><input type="text" name="e-mail" id="e-mail"
             placeholder="kuklachev@gmail.com"></label></div>
-      <div class="form-contacts"><label for="phone">телефон:<sup>*</sup><input type="text" name="phone" id="phone"
+      <div class="form__item"><label for="phone">телефон:<sup>*</sup><input type="text" name="phone" id="phone"
             placeholder="8 (960) 900-60-90"></label></div>
-      <h2 class="form-heading">Комментарий</h2>
+      <h2 class="form__heading">Комментарий</h2>
       <input class="form-comment" type="text" name="comment" id="comment"
         placeholder="расскажите обо всех повадках кота">
-      <h2 class="form-heading">Дополнительно</h2>
-      <ul class="form-checkbox">
-        <li class="form-checkbox__item"><label><input type="checkbox" name="no-sugar" id="no-sugar"
+      <h2 class="form__heading">Дополнительно</h2>
+      <ul class="form__checkbox">
+        <li class="form__item"><label><input type="checkbox" name="no-sugar" id="no-sugar"
               checked>сахоразаменитель</label></li>
-        <li class="form-checkbox__item"><label><input type="checkbox" name="water" id="water">питьевая вода</label></li>
-        <li class="form-checkbox__item"><label><input type="checkbox" name="milk" id="milk">молоко</label></li>
-        <li class="form-checkbox__item"><label><input type="checkbox" name="vitamins" id="vitamins">витамины</label>
+        <li class="form__item"><label><input type="checkbox" name="water" id="water">питьевая вода</label></li>
+        <li class="form__item"><label><input type="checkbox" name="milk" id="milk">молоко</label></li>
+        <li class="form__item"><label><input type="checkbox" name="vitamins" id="vitamins">витамины</label>
         </li>
       </ul>
       <button class="button">отправить заявку</button>
     </form>
-    <p class="bottom-text"><sup>*</sup> — Обязательные поля</p>
+    <p class="form__bottom-text"><sup>*</sup> — Обязательные поля</p>
   </main>
   <footer class="page-footer">
     <div class="page-footer__info">
