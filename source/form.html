@@ -30,10 +30,10 @@
     <h1 class="form-page__main-heading">Подбор программы</h1>
     <p class="form-page__top-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form action="https://echo.htmlacademy.ru" class="form">
-      <div class="form__item"><label for="name">Имя:<sup>*</sup><input type="text" name="name" id="name"></label></div>
-      <div class="form__item"><label for="weight">Вес(кг):<sup>*</sup><input type="text" name="weight"
-            id="weight"></label></div>
-      <div class="form__item"><label for="age">Возраст(лет):<input type="text" name="age" id="age"> </label></div>
+      <div class="form__item"><label for="name">Имя:<sup>*</sup><input type="text" class="form__text-input" name="name" id="name" placeholder="барсик"></label></div>
+      <div class="form__item"><label for="weight">Вес(кг):<sup>*</sup><input class="form__text-input" type="text" name="weight"
+            id="weight" placeholder="7"></label></div>
+      <div class="form__item"><label for="age">Возраст(лет):<input class="form__text-input" type="text" name="age" id="age" placeholder="7"> </label></div>
       <div class="form__radio">
         <div class="form__radio-item"><input type="radio" name="loose-weight" id="loose-weight" checked><label
             for="loose-weight">похудение</label></div>
@@ -43,20 +43,20 @@
             ваш совет)</label></div>
       </div>
       <h2 class="form__heading">Контактные данные (владельца кота)</h2>
-      <div class="form__item"><label for="e-mail">e-mail:<sup>*</sup><input type="text" name="e-mail" id="e-mail"
+      <div class="form__item"><label for="e-mail">e-mail:<sup>*</sup><input class="form__contacts-input" type="text" name="e-mail" id="e-mail"
             placeholder="kuklachev@gmail.com"></label></div>
-      <div class="form__item"><label for="phone">телефон:<sup>*</sup><input type="text" name="phone" id="phone"
+      <div class="form__item"><label for="phone">телефон:<sup>*</sup><input class="form__contacts-input" type="text" name="phone" id="phone"
             placeholder="8 (960) 900-60-90"></label></div>
       <h2 class="form__heading">Комментарий</h2>
-      <input class="form-comment" type="text" name="comment" id="comment"
+      <input class="form__comment" type="text" name="comment" id="comment"
         placeholder="расскажите обо всех повадках кота">
       <h2 class="form__heading">Дополнительно</h2>
-      <ul class="form__checkbox">
-        <li class="form__item"><label><input type="checkbox" name="no-sugar" id="no-sugar"
+      <ul class="form__checklist">
+        <li class="form__item"><label><input type="checkbox" class="form__checkbox" name="no-sugar" id="no-sugar"
               checked>сахоразаменитель</label></li>
-        <li class="form__item"><label><input type="checkbox" name="water" id="water">питьевая вода</label></li>
-        <li class="form__item"><label><input type="checkbox" name="milk" id="milk">молоко</label></li>
-        <li class="form__item"><label><input type="checkbox" name="vitamins" id="vitamins">витамины</label>
+        <li class="form__item"><label><input type="checkbox" class="form__checkbox" name="water" id="water">питьевая вода</label></li>
+        <li class="form__item"><label><input type="checkbox" class="form__checkbox" name="milk" id="milk">молоко</label></li>
+        <li class="form__item"><label><input type="checkbox" class="form__checkbox" name="vitamins" id="vitamins">витамины</label>
         </li>
       </ul>
       <button class="button">отправить заявку</button>

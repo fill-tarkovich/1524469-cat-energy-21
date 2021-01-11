@@ -7,6 +7,39 @@
   text-transform: uppercase;
 }
 
+.form__text-input {
+  height: 45px;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form__contacts-input {
+  height: 45.15px;
+  border: 1px solid @special_grey;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form__text-input::placeholder,
+.form__contacts-input::placeholder,
+.form__comment::placeholder {
+  font-family: @oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  text-transform: uppercase;
+}
+
+.form__comment {
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  min-width: 280px;
+  min-height: 150.52px;
+  outline: none;
+}
+
 .form__radio {
   height: 157px;
   border-top: 1px solid @border-grey;
@@ -29,13 +62,19 @@
   line-height: 26px;
 }
 
-.form__checkbox {
+.form__checklist {
   list-style: none;
   padding: 0;
 }
 
+.form__checkbox {
+  width: 30px;
+  height: 30px;
+  border: 1px solid @special_grey;
+}
+
 .form__bottom-text {
-  font-family: "Arial", sans-serif;
+  font-family: @arial;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
