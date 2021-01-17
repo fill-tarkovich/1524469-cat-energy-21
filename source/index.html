@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page-body">
@@ -31,8 +32,9 @@
       <h2 class="promo__header">Функциональное питание для котов</h2>
       <p class="promo__text">Занялся собой? Займись котом!</p>
     </div>
-    <img class="can__image" src="../img/index-can-mobile.jpg">
-    <button class="button">Подобрать программу</button>
+    <img class="can-image" src="../img/index-can-mobile.png">
+    <button class="button promo__button">Подобрать программу</button>
+    <div class="option__block">
     <div class="option">
       <h3 class="option__header">Похудение</h3>
       <p class="option__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
@@ -45,6 +47,7 @@
         вашему коту нарастить необходимые мышцы!</p>
       <a href="#" class="option__link">Каталог PRO</a>
     </div>
+  </div>
     <div class="features">
       <h2 class="features__header">Как это работает</h2>
       <ul class="features__list">
@@ -59,6 +62,7 @@
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в день.</p>
+        <div class="example__numbers">
       <div class="example__fact">
         <p class="example__fact-big">5 КГ</p>
         <p class="example__fact-small">Снижение веса</p>
@@ -68,12 +72,12 @@
         <p class="example__fact-small">Затрачено времени</p>
       </div>
       <p class="example__text-bold">Затраты на питание: 15 000 РУБ.</p>
-      <img class="example__image" src="https://via.placeholder.com/311x232">
-      <p class="example__slider-text">Было</p>
+    </div>
+      <img class="example__image" src="../img/before-mobile.png">
       <div class="example__slider">
-        ----
+        <p class="example__slider-text">Было</p>
+        <p class="example__slider-text">Стало</p>
       </div>
-      <p class="example__slider-text">Стало</p>
     </div>
   </main>
   <footer class="page-footer">
@@ -92,8 +96,10 @@
         <a href="#" class="page-footer__contacts-link">Instagram</a>
         <a href="#" class="page-footer__contacts-link">Facebook</a>
       </div>
+      <div class="page-footer__academy">
       <p class="page-footer__academy-text">HTML Academy</p>
       <img class="page-footer__academy-logo" src="https://via.placeholder.com/27x34">
+    </div>
     </div>
   </footer>
 </body>

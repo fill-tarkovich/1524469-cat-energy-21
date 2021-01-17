@@ -1,6 +1,22 @@
 .page-footer__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 114px;
   background-color: @basic_grey;
+  padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    height: 201px;
+    padding-left: 71px;
+    padding-right: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 570px;
+    padding: 0;
+  }
 }
 
 .page-footer__info-main {
@@ -9,9 +25,24 @@
 
 .page-footer__info-left {
   font-family: @oswald;
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 140px;
+  margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 171px;
+    padding-right: 295px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 163px;
+    padding-right: 87px;
+  }
 }
 
 .page-footer__info-right {
@@ -19,9 +50,78 @@
   font-size: 14px;
   line-height: 20px;
   color: @special_dark-grey;
+  width: 140px;
+  margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 159px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 155px;
+  }
 }
 
 .page-footer__contacts {
   height: 236px;
   background-color: @basic_grey;
+
+  @media (min-width: @tablet-width) {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__contacts-logo {
+  margin-left: 96px;
+  margin-top: 39px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.page-footer__social {
+  width: 280px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  border-top: 1px solid @border-grey;
+  border-bottom: 1px solid @border-grey;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.page-footer__academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: 78px;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 163px;
+    margin-right: 31px;
+  }
+}
+
+.page-footer__academy-text {
+  font-family: @arial;
+  color: @special_dark-grey;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18.4px;
 }
