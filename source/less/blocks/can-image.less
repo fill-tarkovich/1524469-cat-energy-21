@@ -1,13 +1,18 @@
 .can-image {
   position: absolute;
-  display: block;
-  margin: auto;
-  transform: translateY(-100%);
+  top: 167px;
+  left: 20px;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     width: 709px;
     height: 609px;
-    position: relative;
-    transform: none;
+    top: 221px;
+    left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 141px;
+    left: 558px;
   }
 }

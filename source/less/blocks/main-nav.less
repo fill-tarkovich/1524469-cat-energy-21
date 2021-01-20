@@ -1,5 +1,11 @@
 .main-nav {
   font-family: @oswald;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+    color: @white;
+  }
 }
 
 .main-nav__list {
@@ -19,6 +25,8 @@
     display: flex;
     justify-content: space-between;
     margin-right: 0;
+    position: absolute;
+    top: 0;
   }
 }
 

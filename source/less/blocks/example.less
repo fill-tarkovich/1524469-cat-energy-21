@@ -4,6 +4,32 @@
   @media (min-width: @tablet-width) {
     background: none;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 654px;
+  }
+}
+
+.example > .container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    height: 654px;
+  }
+}
+
+.example__left {
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__right {
+  @media (min-width: @desktop-width) {
+    width: 730px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .example__header {
@@ -11,16 +37,10 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-left: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 110px;
   }
 }
 
@@ -30,7 +50,6 @@
   line-height: 18px;
   font-weight: normal;
   color: @special_dark-grey;
-  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -41,24 +60,25 @@
 
   @media (min-width: @desktop-width) {
     width: 436px;
-    margin-left: 110px;
+    margin: 0;
   }
 }
 
 .example__numbers {
   display: flex;
-  width: 280px;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 707px;
-    margin-left: 30px;
     margin-top: 54px;
     margin-bottom: 50px;
     justify-content: flex-start;
     flex-wrap: nowrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+    flex-wrap: wrap;
   }
 }
 
@@ -115,7 +135,12 @@
     line-height: 20px;
     padding-left: 125px;
     margin: 0;
+  }
 
+  @media (min-width: @desktop-width) {
+    width: 327px;
+    padding-left: 0;
+    padding-top: 60px;
   }
 }
 
@@ -126,8 +151,11 @@
   margin: auto;
 
   @media (min-width: @tablet-width) {
-    min-width: 768px;
-    background-color: @background-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 572px;
   }
 }
 
@@ -144,6 +172,11 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .example__image {
@@ -152,5 +185,11 @@
     z-index: 1;
     width: 708px;
     height: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 536px;
+    position: relative;
+    z-index: 0;
   }
 }

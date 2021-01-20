@@ -1,25 +1,23 @@
 .option {
-  width: 280px;
   height: 266px;
   background-color: @basic_grey;
   margin: auto;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
     height: 372px;
   }
 
   @media (min-width: @desktop-width) {
     width: 570px;
     min-height: 374px;
+    margin: 0;
   }
 }
 
 .option__block {
   @media (min-width: @desktop-width) {
     display: flex;
-    margin-left: 110px;
-    width: 1220px;
+    justify-content: space-between;
   }
 }
 

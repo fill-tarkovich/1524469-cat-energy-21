@@ -29,26 +29,29 @@
   </header>
   <main class="main">
     <div class="promo">
-      <h2 class="promo__header">Функциональное питание для котов</h2>
-      <p class="promo__text">Занялся собой? Займись котом!</p>
+      <div class="container">
+        <h2 class="promo__header">Функциональное питание для котов</h2>
+        <p class="promo__text">Занялся собой? Займись котом!</p>
+        <img class="can-image" src="../img/index-can-mobile.png">
+      </div>
     </div>
-    <img class="can-image" src="../img/index-can-mobile.png">
     <button class="button promo__button">Подобрать программу</button>
-    <div class="option__block">
-    <div class="option">
-      <h3 class="option__header">Похудение</h3>
-      <p class="option__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету!
-        Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-      <a href="#" class="option__link">Каталог SLIM</a>
+    <div class="option__block container">
+      <div class="option">
+        <h3 class="option__header">Похудение</h3>
+        <p class="option__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
+          диету!
+          Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a href="#" class="option__link">Каталог SLIM</a>
+      </div>
+      <div class="option">
+        <h3 class="option__header">Набор массы</h3>
+        <p class="option__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
+          вашему коту нарастить необходимые мышцы!</p>
+        <a href="#" class="option__link">Каталог PRO</a>
+      </div>
     </div>
-    <div class="option">
-      <h3 class="option__header">Набор массы</h3>
-      <p class="option__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
-        вашему коту нарастить необходимые мышцы!</p>
-      <a href="#" class="option__link">Каталог PRO</a>
-    </div>
-  </div>
-    <div class="features">
+    <div class="features container">
       <h2 class="features__header">Как это работает</h2>
       <ul class="features__list">
         <li class="features__list-item">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -58,26 +61,33 @@
       </ul>
     </div>
     <div class="example">
-      <h2 class="example__header">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день.</p>
+      <div class="container">
+        <div class="example__left">
+        <h2 class="example__header">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+          часов
+          в день.</p>
         <div class="example__numbers">
-      <div class="example__fact">
-        <p class="example__fact-big">5 КГ</p>
-        <p class="example__fact-small">Снижение веса</p>
+          <div class="example__fact">
+            <p class="example__fact-big">5 КГ</p>
+            <p class="example__fact-small">Снижение веса</p>
+          </div>
+          <div class="example__fact">
+            <p class="example__fact-big">60 ДНЕЙ</p>
+            <p class="example__fact-small">Затрачено времени</p>
+          </div>
+          <p class="example__text-bold">Затраты на питание: 15 000 РУБ.</p>
+        </div>
       </div>
-      <div class="example__fact">
-        <p class="example__fact-big">60 ДНЕЙ</p>
-        <p class="example__fact-small">Затрачено времени</p>
+      <div class="example__right">
+        <img class="example__image" src="../img/before-mobile.png">
+        <div class="example__slider">
+          <p class="example__slider-text">Было</p>
+          <p class="example__slider-text">Стало</p>
+        </div>
       </div>
-      <p class="example__text-bold">Затраты на питание: 15 000 РУБ.</p>
     </div>
-      <img class="example__image" src="../img/before-mobile.png">
-      <div class="example__slider">
-        <p class="example__slider-text">Было</p>
-        <p class="example__slider-text">Стало</p>
-      </div>
     </div>
   </main>
   <footer class="page-footer">
@@ -85,21 +95,23 @@
       <p class="page-footer__info-left">приглашаем к сотрудничеству дилеров!</p>
       <p class="page-footer__info-right">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
-    <iframe
+    <div class="page-footer__container">
+    <iframe class="page-footer__map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.32085871595817!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sfi!4v1606254189367!5m2!1sru!2sfi"
-      width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0"></iframe>
-    <div class="page-footer__contacts">
-      <img class="page-footer__contacts-logo" src="https://via.placeholder.com/128x24">
-      <div class="page-footer__social">
-        <a href="#" class="page-footer__contacts-link">Вконтакте</a>
-        <a href="#" class="page-footer__contacts-link">Instagram</a>
-        <a href="#" class="page-footer__contacts-link">Facebook</a>
+      aria-hidden="false" tabindex="0"></iframe></div>
+    <div class="page-footer__background">
+      <div class="page-footer__contacts container">
+        <img class="page-footer__contacts-logo" src="https://via.placeholder.com/128x24">
+        <div class="page-footer__social">
+          <a href="#" class="page-footer__contacts-link">Вконтакте</a>
+          <a href="#" class="page-footer__contacts-link">Instagram</a>
+          <a href="#" class="page-footer__contacts-link">Facebook</a>
+        </div>
+        <div class="page-footer__academy">
+          <p class="page-footer__academy-text">HTML Academy</p>
+          <img class="page-footer__academy-logo" src="https://via.placeholder.com/27x34">
+        </div>
       </div>
-      <div class="page-footer__academy">
-      <p class="page-footer__academy-text">HTML Academy</p>
-      <img class="page-footer__academy-logo" src="https://via.placeholder.com/27x34">
-    </div>
     </div>
   </footer>
 </body>
