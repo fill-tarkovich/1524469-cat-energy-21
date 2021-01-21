@@ -1,6 +1,17 @@
 .main-nav {
   font-family: @oswald;
+  color: @black;
+}
 
+.main-nav {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+    color: @black;
+  }
+}
+
+.main-nav--index {
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: flex-end;
