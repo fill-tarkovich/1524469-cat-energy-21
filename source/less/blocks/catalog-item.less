@@ -1,5 +1,77 @@
-.catalog-item {
+.catalog-item__border {
+  height: 208px;
   border-top: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 324px;
+    height: 430px;
+    border: none;
+    background: @basic_grey;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 68px;
+    margin-top: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
+}
+
+.catalog-item {
+  height: 112px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 19px;
+  padding-bottom: 13px;
+  width: 280px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.catalog-item__picture {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 140px;
+  height: 112px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    width: 250px;
+    height: 207px;
+    margin-left: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+  }
+}
+
+.catalog-item__product-description {
+  display: flex;
+  flex-direction: column;
+  width: 149px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 250px;
+    top: 147px;
+    left: 37.5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    top: 154px;
+  }
 }
 
 .catalog-item__heading {
@@ -9,6 +81,30 @@
   line-height: 20px;
   color: @special_dark-grey-2;
   text-transform: uppercase;
+  width: 76px;
+  margin-top: 0;
+  margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 21px;
+  }
+}
+
+.catalog-item__text-block {
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    height: 32px;
+    border-bottom: 1px solid @special_grey;
+    align-items: center;
+  }
 }
 
 .catalog-item__text {
@@ -17,4 +113,24 @@
   font-size: 12px;
   line-height: 16px;
   color: @special_dark-grey;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.catalog-item__button {
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    margin: 0;
+    position: absolute;
+    top: 351px;
+    left: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px
+  }
 }

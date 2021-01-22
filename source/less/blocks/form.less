@@ -51,6 +51,17 @@
   border: 1px solid #E7E7E7;
   box-sizing: border-box;
   outline: none;
+  font-family: @oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__text-label {
@@ -62,6 +73,17 @@
   border: 1px solid @special_grey;
   box-sizing: border-box;
   outline: none;
+  font-family: @oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__text-input::placeholder,
@@ -73,6 +95,11 @@
   line-height: 18px;
   color: @special_dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__comment {
@@ -81,6 +108,17 @@
   width: 280px;
   min-height: 150.52px;
   outline: none;
+  font-family: @oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special_dark-grey;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__radio {
@@ -192,18 +230,12 @@
   font-size: 24px;
   line-height: 26px;
   width: 300px;
-  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    padding-left: 69px;
     font-size: 36px;
     line-height: 36px;
     margin: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 110px;
   }
 }
 
