@@ -2,11 +2,14 @@
   background-color: @background-grey;
 
   @media (min-width: @tablet-width) {
-    background: none;
+    background: linear-gradient(#ffffff 55.5%, #eaeaea 55.5%);
+    border-top: 1px solid #E6E6E6;
   }
 
   @media (min-width: @desktop-width) {
-    height: 654px;
+    height: 656px;
+    background: linear-gradient(#ffffff 194px, #eaeaea 194px);
+    border-top: none;
   }
 }
 
@@ -25,10 +28,13 @@
 }
 
 .example__right {
-  @media (min-width: @desktop-width) {
-    width: 730px;
+  @media (min-width: @tablet-width) {
+    height: 653px;
     display: flex;
     flex-direction: column;
+  }
+  @media (min-width: @desktop-width) {
+    width: 730px;
   }
 }
 
@@ -41,6 +47,11 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 58px;
+    margin-bottom: 146px;
   }
 }
 
@@ -92,7 +103,14 @@
 
   @media (min-width: @tablet-width) {
     width: 162px;
+    height: 72px;
     margin-right: 42px;
+  }
+}
+
+.example__fact-break {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -101,6 +119,7 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0;
+  margin-top: 14.47px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -113,10 +132,38 @@
   font-size: 12px;
   line-height: 12px;
   color: @special_dark-grey;
+  width: 87px;
+  background-color: @background-grey;
+  margin: auto;
+  margin-top: 9px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @background-grey;
+  }
+}
+
+.example__fact-small--left {
+  @media (min-width: @tablet-width) {
+    width: 114px;
+    height: 27px;
+  }
+}
+
+.example__fact-small--right {
+  @media (min-width: @tablet-width) {
+    width: 142px;
+    height: 27px;
   }
 }
 
@@ -126,6 +173,8 @@
   line-height: 20px;
   text-align: center;
   padding-left: 46px;
+  margin-top: 34px;
+  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -144,17 +193,25 @@
   }
 }
 
-.example__slider {
-  width: 210px;
+.example__slider-block {
+  width: 207px;
+  height: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: auto;
+  margin-top: 27px;
+  padding-bottom: 31px;
 
   @media (min-width: @tablet-width) {
+    width: 570px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
     width: 572px;
   }
 }
@@ -167,8 +224,6 @@
   font-weight: normal;
 
   @media (min-width: @tablet-width) {
-    padding-top: 728px;
-    margin: auto;
     font-size: 20px;
     line-height: 30px;
   }
@@ -179,10 +234,67 @@
   }
 }
 
-.example__image {
+.example__slider {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  background-color: @white;
+  border: 1px solid #CDCDCD;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: #DCDCDC;
+    border: none;
+  }
+}
+
+.example__slider-bar {
+  width: 35px;
+  height: 6px;
+  background-color: #68B738;
+  border-radius: 6px;
+  margin-top: 3px;
+  margin-left: 5px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.example__slider-toggle {
   @media (min-width: @tablet-width) {
     position: absolute;
-    z-index: 1;
+    top: -15px;
+    left: 197px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: @white;
+    border: 1px solid #CDCDCD;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.example__slider-toggle::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: @basic_green;
+    margin: auto;
+  }
+}
+
+.example__image {
+  @media (min-width: @tablet-width) {
     width: 708px;
     height: 620px;
   }
