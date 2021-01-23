@@ -1,6 +1,9 @@
 .page-header-top {
-  height: 66px;
+  width: 280px;
   margin: auto;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     padding-left: 30px;
@@ -8,5 +11,29 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 110px;
+  }
+}
+
+.page-header-top__logo-image {
+  width: 191px;
+  height: 38px;
+  margin-top: 11px;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header-top__menu-button {
+  border: none;
+  background-color: @white;
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

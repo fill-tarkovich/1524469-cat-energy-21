@@ -2,6 +2,7 @@
   background-color: @background-grey;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     background: linear-gradient(#ffffff 55.5%, #eaeaea 55.5%);
     border-top: 1px solid #E6E6E6;
   }
@@ -204,6 +205,9 @@
   padding-bottom: 31px;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 39px;
+    left: 97px;
     width: 570px;
   }
 
@@ -213,6 +217,7 @@
     margin-bottom: 0;
     padding: 0;
     width: 572px;
+    left: 758px;
   }
 }
 
@@ -300,8 +305,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 536px;
-    position: relative;
+    width: 690px;
+    height: 656px;
+    position: absolute;
+    right: 0;
     z-index: 0;
   }
 }
