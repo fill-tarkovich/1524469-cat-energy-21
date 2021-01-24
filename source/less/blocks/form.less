@@ -86,6 +86,20 @@
   }
 }
 
+.form__email-icon {
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  top: 18px;
+}
+
+.form__phone-icon {
+  position: absolute;
+  z-index: 2;
+  right: 13px;
+  top: 14px;
+}
+
 .form__text-input::placeholder,
 .form__contacts-input::placeholder,
 .form__comment::placeholder {
@@ -234,6 +248,7 @@
 }
 
 .form__contacts-item {
+  position: relative;
   font-family: @oswald;
   font-weight: normal;
   font-size: 16px;
@@ -366,7 +381,7 @@
 }
 
 .form__checkbox:checked {
-  background-image: url(/img/vector.svg);
+  background-image: url(../img/vector.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
