@@ -4,18 +4,60 @@
   font-size: 24px;
   line-height: 24px;
   padding-top: 25px;
-  padding-bottom: 36px;
+  padding-bottom: 34px;
+  padding-right: 10px;
+  position: relative;
+  display: inline-block;
+  background: #ffffff;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 0;
-    padding-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 83px;
+    padding-left: 37px;
+    padding-right: 36px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 7px;
+    padding-bottom: 78px;
+    padding-left: 40px;
+    left: -40px;
   }
+}
+
+.additional-items__main-heading::before,
+.additional-items__main-heading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100vw; // чтоб тянулось на всю ширину экрана
+    height: 2px;
+    background: #68b738;
+    z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      transform: translateY(-36px);
+    }
+
+    @media (min-width: @desktop-width) {
+      transform: translateY(-34px);
+    }
+}
+
+.additional-items__main-heading::before {
+  right: 0;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+  }
+}
+
+.additional-items__main-heading::after {
+  left: 20px;
 }
 
 .additional-items {
@@ -40,7 +82,7 @@
   width: 280px;
   border-top: 1px solid @special_grey;
   border-bottom: 1px solid @special_grey;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
 
   @media (min-width: @tablet-width) {
     width: 632px;
@@ -48,7 +90,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    height: 140px;
+    height: 138px;
     padding: 0;
     padding-left: 38px;
     padding-right: 38px;
@@ -57,7 +99,7 @@
 
   @media (min-width: @desktop-width) {
     width: 895px;
-    height: 72px;
+    height: 71px;
     padding: 0;
   }
 }
@@ -82,12 +124,14 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0;
+    margin-bottom: 26px;
   }
 
   @media (min-width: @desktop-width) {
     width: 286px;
     display: flex;
     align-items: center;
+    margin-bottom: 2px;
   }
 }
 
@@ -115,6 +159,10 @@
     font-size: 16px;
     line-height: 20px;
     padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
   }
 }
 

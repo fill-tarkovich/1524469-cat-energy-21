@@ -1,4 +1,6 @@
 .features {
+  height: 418px;
+
   @media (min-width: @tablet-width) {
     height: 736px;
   }
@@ -13,12 +15,14 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
+  margin-top: 27px;
+  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-top: 45px;
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -56,7 +60,7 @@
   @media (min-width: @tablet-width) {
     width: 245px;
     padding-left: 0;
-    padding-top: 31px;
+    padding-top: 25px;
   }
 }
 
@@ -71,8 +75,7 @@
   font-family: @arial;
   font-size: 14px;
   line-height: 18px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 20px;
   height: 60px;
   display: flex;
 
@@ -81,7 +84,7 @@
     line-height: 24px;
     position: relative;
     display: block;
-    width: 230px;
+    width: 250px;
     height: 280px;
     padding: 0;
     margin-bottom: 37px;
@@ -108,12 +111,30 @@
   }
 }
 
-.features__list-item:nth-of-type(2n) {
+.features__list-item:first-of-type {
+  @media (min-width: @tablet-width) {
+    width: 230px;
+  }
+}
+
+.features__list-item:nth-of-type(2) {
   @media (min-width: @tablet-width) {
     margin-left: 154px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-left: 21px;
+    width: 246px;
+  }
+}
+
+.features__list-item:nth-of-type(4) {
+  @media (min-width: @tablet-width) {
+    margin-left: 134px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-left: 0;
+    width: 250px;
   }
 }

@@ -16,10 +16,12 @@
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    margin-bottom: 72px;
   }
 }
 
 .catalog-item {
+  position: relative;
   height: 112px;
   display: flex;
   justify-content: space-between;
@@ -29,11 +31,16 @@
   margin: auto;
 
   @media (min-width: @tablet-width) {
+    height: 324px;
     display: flex;
     flex-direction: column;
     width: 250px;
     margin: 0;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 431px;
   }
 }
 
@@ -41,18 +48,55 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 140px;
+  width: 150px;
   height: 112px;
+  transform: translateY(11px);
 
   @media (min-width: @tablet-width) {
     order: 1;
     width: 250px;
     height: 207px;
     margin-left: 37px;
+    transform: translateY(-60px);
   }
 
   @media (min-width: @desktop-width) {
     width: 169px;
+    transform: translateY(-66px);
+  }
+}
+
+.catalog-item__picture-one {
+  transform: none;
+
+  @media (min-width: @tablet-width) {
+    transform: translateY(-60px);
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translateY(-66px);
+  }
+}
+
+.catalog-item__picture-big {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 140px;
+  height: 112px;
+  transform: translateY(7px);
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    width: 250px;
+    height: 207px;
+    margin-left: 37px;
+    transform: translateY(-70px);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    transform: translateY(-80px);
   }
 }
 
@@ -64,13 +108,13 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     width: 250px;
-    top: 147px;
+    top: 162px;
     left: 37.5px;
   }
 
   @media (min-width: @desktop-width) {
     width: 169px;
-    top: 154px;
+    top: 161px;
   }
 }
 
@@ -91,7 +135,11 @@
     line-height: 24px;
     text-align: center;
     margin: auto;
-    margin-bottom: 21px;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 13px;
   }
 }
 
@@ -101,7 +149,7 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    height: 32px;
+    height: 31px;
     border-bottom: 1px solid @special_grey;
     align-items: center;
   }

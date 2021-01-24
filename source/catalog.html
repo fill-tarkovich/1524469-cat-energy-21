@@ -24,7 +24,7 @@
           <a href="index.html">Главная</a>
         </li>
         <li class="main-nav__list-item">
-          <a href="#">Каталог продукции</a>
+          <a class="active" href="#">Каталог продукции</a>
         </li>
         <li class="main-nav__list-item">
           <a href="form.html">Подбор программы</a>
@@ -37,7 +37,7 @@
     <div class="catalog__list">
       <div class="catalog-item__border">
         <div class="catalog-item">
-          <div class="catalog-item__picture">
+          <div class="catalog-item__picture catalog-item__picture-one">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/catalog-1-desktop.png 1x, img/catalog-1-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png 1x, img/catalog-1-tablet@2x.png 2x">
@@ -63,7 +63,7 @@
       </div>
       <div class="catalog-item__border">
         <div class="catalog-item">
-          <div class="catalog-item__picture"><picture>
+          <div class="catalog-item__picture-big"><picture>
             <source media="(min-width: 1440px)" srcset="img/catalog-2-desktop.png 1x, img/catalog-2-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png 1x, img/catalog-2-tablet@2x.png 2x">
             <img src="img/catalog-2-mobile.png" srcset="img/catalog-2-mobile.png 1x, img/catalog-2-mobile@2x.png 2x" alt="Оранжевая банка с питанием">
@@ -113,7 +113,7 @@
       </div>
       <div class="catalog-item__border">
         <div class="catalog-item">
-          <div class="catalog-item__picture"><picture>
+          <div class="catalog-item__picture-big"><picture>
             <source media="(min-width: 1440px)" srcset="img/catalog-4-desktop.png 1x, img/catalog-4-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.png 1x, img/catalog-4-tablet@2x.png 2x">
             <img src="img/catalog-4-mobile.png" srcset="img/catalog-4-mobile.png 1x, img/catalog-4-mobile@2x.png 2x" alt="Зеленая банка с питанием">
@@ -163,7 +163,7 @@
       </div>
       <div class="catalog-item__border">
         <div class="catalog-item">
-          <div class="catalog-item__picture"><picture>
+          <div class="catalog-item__picture-big"><picture>
             <source media="(min-width: 1440px)" srcset="img/catalog-6-desktop.png 1x, img/catalog-6-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/catalog-6-tablet.png 1x, img/catalog-6-tablet@2x.png 2x">
             <img src="img/catalog-6-mobile.png" srcset="img/catalog-6-mobile.png 1x, img/catalog-6-mobile@2x.png 2x" alt="Голубая банка с питанием">
@@ -219,11 +219,13 @@
         </div>
       </div>
     </div>
-    <h2 class="additional-items__main-heading container">Дополнительные товары</h3>
+    <div class="container__overflow">
+      <div class="container">
+    <h2 class="additional-items__main-heading">Дополнительные товары</h3></div></div>
       <div class="catalog__bottom">
       <div class="additional-items">
         <div class="additional-items__block">
-          <h3 class="additional-items__heading">Сахоразаменитель</h3>
+          <h3 class="additional-items__heading">Сахарозаменитель</h3>
           <div class="additional-items__text-block">
             <p class="additional-items__text">1 упаковка (100 г)</p>
             <p class="additional-items__text">200 Р.</p>
@@ -284,8 +286,8 @@
   <footer class="page-footer">
     <div class="page-footer__info-container">
       <div class="page-footer__info page-footer__info-form">
-        <p class="page-footer__info-left">приглашаем к сотрудничеству дилеров!</p>
-        <p class="page-footer__info-right">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="page-footer__info-left">приглашаем <br>к сотрудничеству дилеров!</p>
+        <p class="page-footer__info-right">ул. Большая Конюшенная, д. 19/8 <br class="page-footer__break"><br class="page-footer__break">Санкт-Петербург</p>
       </div>
     </div>
     <div class="page-footer__container">

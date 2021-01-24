@@ -2,9 +2,8 @@
   position: relative;
   z-index: -1;
   font-family: @oswald;
-  width: 320px;
   height: 302px;
-  background: url(../img/index-background-desktop.jpg);
+  background: url(../img/green-cat.jpg);
   background-position: top;
   background-repeat: no-repeat;
   padding-bottom: 138px;
@@ -16,7 +15,7 @@
     background: none;
     color: @black;
     margin: 0;
-    height: 200px;
+    height: 206px;
     padding-bottom: 610px;
   }
 
@@ -33,7 +32,7 @@
 .promo::after {
   content: "";
   background: url(../img/rectangle-18.png);
-  width: 320px;
+  width: 100%;
   height: 302px;
   position: absolute;
   z-index: -2;
@@ -67,15 +66,15 @@
     font-size: 60px;
     line-height: 60px;
     margin-left: 87px;
-    margin-top: 60px;
+    margin-top: 34px;
     text-align: left;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     height: 40px;
-    top: 223px;
-    left: 80px;
+    top: 163px;
+    left: 103px;
   }
 }
 
@@ -97,21 +96,8 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 443px;
-    left: 80px;
+    top: 343px;
+    left: 103px;
   }
 }
 
-.promo__button {
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 370px;
-    left: 112px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 535px;
-    left: 170px;
-  }
-}
