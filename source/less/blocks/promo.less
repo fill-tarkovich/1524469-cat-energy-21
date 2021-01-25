@@ -1,6 +1,5 @@
 .promo {
   position: relative;
-  z-index: -1;
   font-family: @oswald;
   height: 302px;
   background: url(../img/green-cat.jpg);
@@ -22,7 +21,7 @@
   @media (min-width: @desktop-width) {
     width: 1440px;
     height: 694px;
-    background: url(../img/index-background-desktop.png);
+    background: url(../img/green-cat-desktop.jpg);
     background-position: right top;
     background-repeat: no-repeat;
     padding-bottom: 82px;
@@ -31,7 +30,7 @@
 
 .promo::after {
   content: "";
-  background: url(../img/rectangle-18.png);
+  background: #64a73d;
   width: 100%;
   height: 302px;
   position: absolute;
@@ -45,8 +44,6 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    background: url(../img/rectangle-17.png);
-    width: 720px;
     height: 694px;
     left: 720px;
     top: 0px;
