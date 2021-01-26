@@ -5,19 +5,20 @@
   width: 320px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     width: 768px;
     display: grid;
-    grid-template-columns: 1fr 470px;
+    grid-template-columns: 298px 470px;
     height: 78px;
   }
 
   @media (min-width: @desktop-width) {
+    position: relative;
+    background-color: transparent;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1330px;
     margin: auto;
-    position: absolute;
     z-index: 2;
-    top: 0;
   }
 }

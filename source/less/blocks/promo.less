@@ -5,26 +5,43 @@
   background: url("../img/green-cat.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  padding-bottom: 138px;
+  padding-bottom: 178px;
   color: @white;
   margin: auto;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/green-cat@2x.jpg");
+    background-size: 320px auto;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
     width: 768px;
     background: none;
     color: @black;
-    margin: 0;
+    margin: auto;
     height: 206px;
     padding-bottom: 610px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1440px;
+    position: relative;
+    top: -78px;
+    left: 0;
+    width: 100%;
     height: 694px;
     background: url("../img/green-cat-desktop.jpg");
     background-position: right top;
     background-repeat: no-repeat;
-    padding-bottom: 82px;
+    padding-bottom: 4px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/green-cat-desktop@2x.jpg");
+      background-size: 694px 694px;
+      background-position: right top;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -44,8 +61,10 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    width: 50vh;
+    background-repeat: no-repeat;
     height: 694px;
-    left: 720px;
+    left: 50%;
     top: 0;
   }
 }
@@ -68,10 +87,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
+    margin: 0;
     height: 40px;
-    top: 163px;
-    left: 103px;
+    padding-top: 223px;
+    padding-left: 80px;
   }
 }
 
@@ -93,7 +112,8 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 343px;
-    left: 103px;
+    margin: 0;
+    padding-top: 120px;
+    padding-left: 80px;
   }
 }

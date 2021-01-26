@@ -39,18 +39,50 @@
 }
 
 .button--promo {
+  position: absolute;
+  z-index: 4;
+  top: 440px;
+
   @media (min-width: @tablet-width) {
     width: 244px;
     height: 54px;
     position: absolute;
-    top: 370px;
+    top: 257px;
     left: 112px;
     font-size: 20px;
     line-height: 20px;
+    z-index: 3;
   }
 
   @media (min-width: @desktop-width) {
-    top: 455px;
-    left: 190px;
+    position: absolute;
+    z-index: 3;
+    margin-top: 198px;
+    margin-left: 78px;
+  }
+}
+
+.button--additional-items {
+  @media (min-width: @tablet-width) {
+    width: 638px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    margin: 0;
+  }
+}
+
+.button--catalog-item {
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    margin: 0;
+    position: absolute;
+    top: 351px;
+    left: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
   }
 }

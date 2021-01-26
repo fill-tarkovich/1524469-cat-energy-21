@@ -13,6 +13,21 @@
   }
 }
 
+.container--promo {
+  width: 100%;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: auto;
+  }
+}
+
 .container--form {
   width: 280px;
   margin: auto;
@@ -26,8 +41,4 @@
     width: 1220px;
     margin: auto;
   }
-}
-
-.container__overflow {
-  overflow-x: hidden;
 }

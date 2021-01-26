@@ -16,9 +16,10 @@
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="page-header-top__logo-image" src="img/logo-mobile.svg" alt="Кэт Энерджи">
       </picture>
-      <button class="page-header-top__menu-button"><img class="visually-hidden" src="img/cross.svg"></button>
+      <button class="page-header-top__menu-button"><img class="visually-hidden" src="img/cross.svg"
+          alt="Крестик"></button>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--index">
       <ul class="main-nav__list">
         <li class="main-nav__list-item">
           <a href="index.html">Главная</a>
@@ -33,9 +34,9 @@
     </nav>
   </header>
   <main class="main">
-    <h1 class="catalog__main-heading container">Каталог продукции</h1>
-    <div class="catalog__list">
-      <div class="catalog-item__border">
+    <h1 class="catalog-main-heading container">Каталог продукции</h1>
+    <div class="catalog">
+      <div class="catalog__item-border">
         <div class="catalog-item">
           <div class="catalog-item__picture catalog-item__picture-one">
             <picture>
@@ -62,9 +63,9 @@
             </div>
           </div>
         </div>
-        <button class="button catalog-item__button">Заказать</button>
+        <button class="button button--catalog-item">Заказать</button>
       </div>
-      <div class="catalog-item__border">
+      <div class="catalog__item-border">
         <div class="catalog-item">
           <div class="catalog-item__picture-big">
             <picture>
@@ -91,9 +92,9 @@
             </div>
           </div>
         </div>
-        <button class="button catalog-item__button">Заказать</button>
+        <button class="button button--catalog-item">Заказать</button>
       </div>
-      <div class="catalog-item__border">
+      <div class="catalog__item-border">
         <div class="catalog-item">
           <div class="catalog-item__picture">
             <picture>
@@ -120,9 +121,9 @@
             </div>
           </div>
         </div>
-        <button class="button catalog-item__button">Заказать</button>
+        <button class="button button--catalog-item">Заказать</button>
       </div>
-      <div class="catalog-item__border">
+      <div class="catalog__item-border">
         <div class="catalog-item">
           <div class="catalog-item__picture-big">
             <picture>
@@ -149,9 +150,9 @@
             </div>
           </div>
         </div>
-        <button class="button catalog-item__button">Заказать</button>
+        <button class="button button--catalog-item">Заказать</button>
       </div>
-      <div class="catalog-item__border">
+      <div class="catalog__item-border">
         <div class="catalog-item">
           <div class="catalog-item__picture">
             <picture>
@@ -178,9 +179,9 @@
             </div>
           </div>
         </div>
-        <button class="button catalog-item__button">Заказать</button>
+        <button class="button button--catalog-item">Заказать</button>
       </div>
-      <div class="catalog-item__border">
+      <div class="catalog__item-border">
         <div class="catalog-item">
           <div class="catalog-item__picture-big">
             <picture>
@@ -207,9 +208,9 @@
             </div>
           </div>
         </div>
-        <button class="button catalog-item__button">Заказать</button>
+        <button class="button button--catalog-item">Заказать</button>
       </div>
-      <div class="catalog-item__border">
+      <div class="catalog__item-border">
         <div class="catalog-item">
           <div class="catalog-item__picture">
             <picture>
@@ -236,22 +237,22 @@
             </div>
           </div>
         </div>
-        <button class="button catalog-item__button">Заказать</button>
+        <button class="button button--catalog-item">Заказать</button>
       </div>
       <div class="catalog__more-border">
         <div class="catalog__more">
           <h3 class="catalog__more-heading">Показать еще 100500 товаров</h3>
           <p class="catalog__more-text">На самом деле вкусов гораздо больше!</p>
-          <button class="button--grey">Показать все</button>
+          <button class="button button--grey">Показать все</button>
         </div>
       </div>
     </div>
-    <div class="container__overflow">
+    <div class="container-overflow">
       <div class="container">
-        <h2 class="additional-items__main-heading">Дополнительные товары</h3>
+        <h2 class="additional-items-heading">Дополнительные товары</h3>
       </div>
     </div>
-    <div class="catalog__bottom">
+    <div class="catalog-bottom">
       <div class="additional-items">
         <div class="additional-items__block">
           <h3 class="additional-items__heading">Сахарозаменитель</h3>
@@ -259,7 +260,7 @@
             <p class="additional-items__text">1 упаковка (100 г)</p>
             <p class="additional-items__text">200 Р.</p>
           </div>
-          <button class="button additional-items__button">Заказать</button>
+          <button class="button button--additional-items">Заказать</button>
         </div>
         <div class="additional-items__block">
           <h3 class="additional-items__heading">Питьевая вода</h3>
@@ -267,7 +268,7 @@
             <p class="additional-items__text">5 литров</p>
             <p class="additional-items__text">50 Р.</p>
           </div>
-          <button class="button additional-items__button">Заказать</button>
+          <button class="button button--additional-items">Заказать</button>
         </div>
         <div class="additional-items__block">
           <h3 class="additional-items__heading">Молоко</h3>
@@ -275,7 +276,7 @@
             <p class="additional-items__text">1 литр</p>
             <p class="additional-items__text">100 Р.</p>
           </div>
-          <button class="button additional-items__button">Заказать</button>
+          <button class="button button--additional-items">Заказать</button>
         </div>
         <div class="additional-items__block">
           <h3 class="additional-items__heading">Витамины</h3>
@@ -283,11 +284,11 @@
             <p class="additional-items__text">1 упаковка (30 г)</p>
             <p class="additional-items__text">300 Р.</p>
           </div>
-          <button class="button additional-items__button">Заказать</button>
+          <button class="button button--additional-items">Заказать</button>
         </div>
       </div>
-      <div class="catalog__gift">
-        <svg class="catalog__gift-icon" width="78" height="80" viewBox="0 0 78 80" fill="none"
+      <div class="gift">
+        <svg class="gift__icon" width="78" height="80" viewBox="0 0 78 80" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M64.0156 34.7129H14.031C12.2766 34.7129 10.8494 33.2954 10.8494 31.5526V22.0845C10.8494 20.3417 12.2766 18.9236 14.031 18.9236H64.0149C65.7687 18.9236 67.1953 20.3417 67.1953 22.0845V31.5533C67.1959 33.2954 65.7693 34.7129 64.0156 34.7129ZM14.031 21.3457C13.6276 21.3457 13.2869 21.6842 13.2869 22.0845V31.5533C13.2869 31.9602 13.6208 32.2914 14.031 32.2914H64.0149C64.4244 32.2914 64.7578 31.9602 64.7578 31.5533V22.0845C64.7578 21.6836 64.4171 21.3457 64.0149 21.3457H14.031Z"
@@ -308,7 +309,7 @@
             d="M61.9496 50.9317H16.0929C15.4201 50.9317 14.8741 50.3891 14.8741 49.7206C14.8741 49.0521 15.4201 48.5095 16.0929 48.5095H61.9496C62.6223 48.5095 63.1683 49.0521 63.1683 49.7206C63.1683 50.3891 62.6229 50.9317 61.9496 50.9317Z"
             fill="white" />
         </svg>
-        <p class="catalog__gift-text">Закажите все<br>и получите чехол для кота в подарок!</p>
+        <p class="gift__text">Закажите все<br>и получите чехол для кота в подарок!</p>
       </div>
     </div>
   </main>

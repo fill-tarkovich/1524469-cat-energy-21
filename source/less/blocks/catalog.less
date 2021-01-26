@@ -1,4 +1,4 @@
-.catalog__list {
+.catalog {
   @media (min-width: @tablet-width) {
     width: 708px;
     margin: auto;
@@ -12,23 +12,25 @@
   }
 }
 
-.catalog__main-heading {
-  font-family: @oswald;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 36px;
-  padding-top: 27px;
-  padding-bottom: 39px;
+.catalog__item-border {
+  height: 208px;
+  border-top: 1px solid #ebebeb;
 
   @media (min-width: @tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    padding-bottom: 92px;
-    padding-top: 62px;
+    position: relative;
+    width: 324px;
+    height: 430px;
+    border: none;
+    background: @basic_grey;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 68px;
+    margin-top: 72px;
+  }
 
-    @media (min-width: @desktop-width) {
-      padding-top: 188px;
-    }
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin-bottom: 72px;
   }
 }
 
@@ -138,87 +140,5 @@
     margin: auto;
     margin-top: 23px;
     margin-bottom: 87px;
-  }
-}
-
-.catalog__gift {
-  position: relative;
-  width: 280px;
-  height: 289px;
-  background: url("../img/gift-photo-mobile.jpg");
-  margin: auto;
-  margin-top: 39px;
-  margin-bottom: 35px;
-
-  @media (min-width: @tablet-width) {
-    background: url("../img/gift-photo-tablet.png");
-    display: flex;
-    align-items: center;
-    width: 708px;
-    height: 200px;
-    margin-top: 69px;
-    margin-bottom: 76px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 245px;
-    height: 289px;
-    background: url("../img/gift-photo-desktop.png");
-    margin: 0;
-    margin-left: 80px;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.catalog__gift-icon {
-  margin-left: 101px;
-  margin-top: 58px;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 78px;
-    margin-top: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    position: absolute;
-    margin: 0;
-    top: 56px;
-    left: 84px;
-  }
-}
-
-.catalog__gift-text {
-  display: block;
-  width: 161px;
-  font-family: @arial;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: @white;
-  text-align: center;
-  margin-top: 48px;
-  margin-left: 58px;
-
-  @media (min-width: @tablet-width) {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 265px;
-  }
-
-  @media (min-width: @desktop-width) {
-    position: absolute;
-    text-align: center;
-    margin: 0;
-    top: 185px;
-  }
-}
-
-.catalog__bottom {
-  @media (min-width: @desktop-width) {
-    width: 1220px;
-    margin: auto;
-    margin-bottom: 85px;
-    display: flex;
   }
 }

@@ -16,7 +16,8 @@
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="page-header-top__logo-image" src="img/logo-mobile.svg" alt="Кэт Энерджи">
       </picture>
-      <button class="page-header-top__menu-button"><img class="visually-hidden" src="img/cross.svg"></button>
+      <button class="page-header-top__menu-button"><img class="visually-hidden" src="img/cross.svg"
+          alt="Крестик"></button>
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list">
@@ -33,13 +34,13 @@
     </nav>
   </header>
   <main class="main">
-    <div class="container--form">
+    <div class="form-page container container--form">
       <h1 class="form-page__main-heading">Подбор программы</h1>
       <p class="form-page__top-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
     <form action="https://echo.htmlacademy.ru" class="form">
       <div class="form__basic">
-        <div class="container--form">
+        <div class="container container--form">
           <div class="form__top">
             <div class="form__item"><label class="form__text-label" for="name">Имя:<sup>*</sup></label><input
                 type="text" class="form__text-input" name="name" id="name" placeholder="барсик"></div>
@@ -50,7 +51,7 @@
           </div>
         </div>
         <div class="form__radio">
-          <div class="container--form">
+          <div class="container container--form">
             <div class="form__radio-item"><input class="form__radio-button" type="radio" name="loose-weight"
                 id="loose-weight" checked><label for="loose-weight">похудение</label></div>
             <div class="form__radio-item"><input class="form__radio-button" type="radio" name="gain-weight"
@@ -62,12 +63,12 @@
           </div>
         </div>
       </div>
-      <div class="container__overflow">
-        <div class="container--form">
+      <div class="container-overflow">
+        <div class="container container--form">
           <h2 class="form__heading">Контактные данные<br class="form__heading-break">(владельца кота)</h2>
         </div>
       </div>
-      <div class="form__contacts container--form">
+      <div class="form__contacts container container--form">
         <div class="form__contacts-item"><label class="form__text-label" for="e-mail">e-mail:<sup>*</sup></label><input
             class="form__contacts-input-left" type="text" name="e-mail" id="e-mail"
             placeholder="kuklachev@gmail.com"><img class="form__email-icon" src="img/icon_email.svg"
@@ -76,21 +77,21 @@
             class="form__contacts-input-right" type="text" name="phone" id="phone" placeholder="8 (960) 900-60-90"><img
             class="form__phone-icon" src="img/icon_phone.svg" alt="Иконка с телефоном"></div>
       </div>
-      <div class="container__overflow">
-        <div class="container--form">
+      <div class="container-overflow">
+        <div class="container container--form">
           <h2 class="form__heading">Комментарий</h2>
         </div>
       </div>
-      <div class="container--form">
+      <div class="container container--form">
         <textarea class="form__comment" name="comment" id="comment"
           placeholder="расскажите обо всех повадках кота"></textarea>
       </div>
-      <div class="container__overflow">
-        <div class="container--form">
+      <div class="container-overflow">
+        <div class="container container--form">
           <h2 class="form__heading">Дополнительно</h2>
         </div>
       </div>
-      <div class="container--form">
+      <div class="container container--form">
         <ul class="form__checklist">
           <li class="form__checklist-item"><input type="checkbox" class="form__checkbox" name="no-sugar" id="no-sugar"
               checked><label for="no-sugar">сахарозаменитель</label></li>
@@ -105,7 +106,7 @@
           </li>
         </ul>
       </div>
-      <div class="form__bottom container--form">
+      <div class="form__bottom container container--form">
         <button class="button form__button">отправить заявку</button>
         <p class="form__bottom-text"><sup>*</sup> — Обязательные поля</p>
       </div>
@@ -115,8 +116,7 @@
     <div class="page-footer__info-container">
       <div class="page-footer__info page-footer__info-form">
         <p class="page-footer__info-left">приглашаем <br>к сотрудничеству дилеров!</p>
-        <p class="page-footer__info-right">ул. Большая Конюшенная, д. 19/8 <br class="page-footer__break"><br
-            class="page-footer__break">Санкт-Петербург</p>
+        <div class="page-footer__info-right"><p class="page-footer__info-right-text">ул. Большая Конюшенная, д. 19/8</p><br class="page-footer__break"><p class="page-footer__info-right-text">Санкт-Петербург</p></div>
       </div>
     </div>
     <iframe class="page-footer__map"

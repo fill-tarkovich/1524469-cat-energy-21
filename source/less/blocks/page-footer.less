@@ -74,14 +74,17 @@
   line-height: 20px;
   color: @special_dark-grey;
   width: 140px;
-  margin-top: 16px;
+  height: 60px;
+  text-align: left;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    width: 159px;
-    padding-top: 4px;
+    width: 160px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
@@ -91,8 +94,13 @@
   }
 }
 
+.page-footer__info-right-text {
+  margin: 0;
+}
+
 .page-footer__break {
   display: none;
+  appearance: none;
 
   @media (min-width: @tablet-width) {
     display: block;
