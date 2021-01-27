@@ -142,10 +142,6 @@ const build = gulp.series(
     copy,
     images,
     createWebp
-  ),
-  gulp.series(
-    server,
-    watcher
   )
 )
 
