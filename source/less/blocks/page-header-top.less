@@ -1,0 +1,47 @@
+.page-header-top {
+  width: 280px;
+  margin: auto;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+  }
+}
+
+.page-header-top__logo-image {
+  width: 191px;
+  height: 38px;
+  margin-top: 11px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin: 0;
+    left: 30px;
+    top: 24px;
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 202px;
+    height: 59px;
+    left: 55px;
+    top: 53px;
+  }
+}
+
+.page-header-top__menu-button {
+  border: none;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

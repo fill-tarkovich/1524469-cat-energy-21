@@ -1,0 +1,72 @@
+.main-nav {
+  font-family: @oswald;
+  color: @black;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+    color: @black;
+    margin-right: 56px;
+  }
+}
+
+.main-nav--index {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-end;
+    color: @white;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-top: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 478px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    margin-right: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.main-nav__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  color: inherit;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-nav__list-item:nth-of-type(2n) {
+  border: none;
+}

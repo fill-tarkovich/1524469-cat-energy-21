@@ -1,0 +1,89 @@
+.button {
+  font-family: @oswald;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  width: 280px;
+  height: 40px;
+  background-color: @basic_green;
+  color: @white;
+  text-transform: uppercase;
+  border: none;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button--grey {
+  font-family: @oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  width: 279px;
+  height: 40px;
+  background-color: @basic_grey;
+  color: @special_dark-grey;
+  text-transform: uppercase;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 16px;
+    width: 249px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 38px;
+    width: 169px;
+  }
+}
+
+.button--promo {
+  position: absolute;
+  z-index: 4;
+  top: 440px;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    height: 54px;
+    position: absolute;
+    top: 257px;
+    left: 112px;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    margin: 0;
+    z-index: 3;
+    top: -310px;
+    left: 80px;
+  }
+}
+
+.button--additional-items {
+  @media (min-width: @tablet-width) {
+    width: 638px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    margin: 0;
+  }
+}
+
+.button--catalog-item {
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    margin: 0;
+    position: absolute;
+    top: 351px;
+    left: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+}

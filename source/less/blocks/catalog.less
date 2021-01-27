@@ -1,0 +1,144 @@
+.catalog {
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.catalog__item-border {
+  height: 208px;
+  border-top: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 324px;
+    height: 430px;
+    border: none;
+    background: @basic_grey;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 68px;
+    margin-top: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin-bottom: 72px;
+  }
+}
+
+.catalog__more-border {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  height: 130px;
+  padding-top: 78px;
+
+  @media (min-width: @tablet-width) {
+    width: 322px;
+    height: 267px;
+    border: 2px solid #f2f2f2;
+    padding-top: 161px;
+    margin-top: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
+}
+
+.catalog__more-heading {
+  font-family: @oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: @black;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 134px;
+    font-size: 20px;
+    line-height: 22px;
+    margin: auto;
+  }
+}
+
+.catalog__more {
+  position: relative;
+  width: 280px;
+  margin: auto;
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
+}
+
+.catalog__more::after {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  width: 30px;
+  border: 2px solid #d3d3d3;
+  transform: rotate(-180deg);
+  top: -39px;
+  left: 125px;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    left: 110px;
+    top: -79px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 93px;
+  }
+}
+
+.catalog__more::before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  width: 30px;
+  border: 2px solid #d3d3d3;
+  transform: rotate(90deg);
+  top: -39px;
+  left: 125px;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    left: 110px;
+    top: -79px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 93px;
+  }
+}
+
+.catalog__more-text {
+  font-family: @arial;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: @special_dark-grey;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    margin: auto;
+    margin-top: 23px;
+    margin-bottom: 87px;
+  }
+}

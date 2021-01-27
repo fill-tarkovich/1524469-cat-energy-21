@@ -1,0 +1,105 @@
+.additional-items {
+  width: 280px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    border: 1px solid @special_grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 895px;
+    border: none;
+    margin: 0;
+    border-top: 1px solid @special_grey;
+    border-bottom: 1px solid @special_grey;
+  }
+}
+
+.additional-items__block {
+  width: 280px;
+  border-top: 1px solid @special_grey;
+  border-bottom: 1px solid @special_grey;
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    width: 632px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    height: 138px;
+    padding: 0;
+    padding-left: 38px;
+    padding-right: 38px;
+    border-top: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 895px;
+    height: 71px;
+    padding: 0;
+  }
+}
+
+.additional-items__block:last-child {
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.additional-items__heading {
+  font-family: @oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: @special_dark-grey-2;
+  text-transform: uppercase;
+  margin-top: 13px;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 286px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+}
+
+.additional-items__text-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+    margin-bottom: 0;
+    align-items: center;
+  }
+}
+
+.additional-items__text {
+  font-family: @arial;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: @special_dark-grey;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
+}

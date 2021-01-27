@@ -1,0 +1,36 @@
+body {
+  min-width: 320px;
+  font-family: @oswald;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @black;
+  margin: auto;
+  padding: 0;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @basic_green;
+  }
+}
+
+.active--white {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @basic_green;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @white;
+  }
+}
